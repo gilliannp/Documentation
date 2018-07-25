@@ -1,0 +1,68 @@
+= Asciidoctor Procedure
+Created by gilliannp
+Version 1.0, Created 2018-03-06, Last Modified {docdate} {doctime}
+:toc:
+
+++++
+<link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
+++++
+
+:icons: font
+
+== Asciidoctor Installation Procedure
+=== Install https://asciidoctor.org/[Asciidoctor] using *_gem_*
+
+. Go to https://rubyinstaller.org/[RubyInstaller] to install [red]#*Ruby*#.
+
+[IMPORTANT] 
+====
+*Please make sure to check the OptionS "Add Ruby executable to your PATH" and "Use UTP-8 as default external encoding" during installation routine.*
+====
+
+[start=2] 
+. After Ruby is installed, it will ask to install _MSYS2_ and _development toolchain_ (MSYS2 is required to install gems with C extensions.) Please proceed. 
+
+. Then the _rubyinstaller2 cmd_ windows shows up. Press Enter if not sure which one to choose. Wait for it to finish. 
+
+. Now open _cmd_ and install the asciidoctor gem by typing the following:
+
+		gem install asciidoctor
+	
+. After finish installing, please check to confirm asciidoctor is installed:
+
+		asciidoctor --version
+	
+. Should show something like:
+
+		Asciidoctor 1.5.6.1 [http://asciidoctor.org]
+		Runtime Environment (ruby 2.5.0p0 (2017-12-25 revision 61468) [x64-mingw32])
+		(lc:UTF-8 fs:UTF-8 in:- ex:UTF-8)
+
+== Convert .adoc to .html
+ 
+. Open Notepad++ and create your contents.
+
+. Save that file as _sample.adoc_
+
+. Go to the Folder that contains the file, hold *Shift + Right Click*.
+
+. The *Option Menu* will opened then choose *Open PowerShell window here*.
+
+. The Windows PowerShell showed up.
+
+. Type *asciidoctor.bat <input file name>* (ex: asciidoctor.bat '.\sample.adoc') then press Enter.
+
+. It will generate html file(s).
+
+== Useful Tools & Information
+
+. https://asciidoctor.org/docs/user-manual/[Asciidoctor User Manual] 
+
+. https://fontawesome.com/[FontAwesome]
+
+. http://www.methods.co.nz/asciidoc/chunked/[Asciidoctor User Guide] by Stuart Rackham (Last visit: 2018-03-07)
+
+. https://powerman.name/doc/asciidoc[Asciidoctor Chearsheet] by Alex Efros (version 2.2.2; Last visit: 2018-03-13)
+
+
+
